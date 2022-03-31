@@ -3,7 +3,7 @@
 **Authors: Brennan Grady, Xavier Molyneaux, Thinh Nguyen**
 
 ## How to execute:
-> gcc mod-v6.c -o mod-v6
+> gcc mod-v6.c -o mod-v6\
 > ./mod-v6
 
 ## Project Logs:
