@@ -1,3 +1,8 @@
+/**
+    Group #15
+    Authors: Brennan Grady, Xavier Molyneaux, Thinh Nguyen
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <fcntl.h>
