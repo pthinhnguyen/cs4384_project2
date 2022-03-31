@@ -1,5 +1,5 @@
 # CS4384 Project 2 - Team 15
-** V6 Unix File System**
+**V6 Unix File System**
 **Authors: Brennan Grady, Xavier Molyneaux, Thinh Nguyen**
 
 ## Project Logs:
