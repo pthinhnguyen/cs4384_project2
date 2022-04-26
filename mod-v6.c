@@ -319,12 +319,6 @@ void initfs(int number_diskBlock, int number_diskBlock_for_inodes) {
 
     // write superblock
     superblock_writer();
-    
-    // genetate all free inodes, except the first one for root
-    // int max_number_of_inode = (int)(superblock.isize * BLOCK_SIZE / INODE_SIZE);
-    // for (int inode_idx = 2; inode_idx < max_number_of_inode; inode_idx++) {
-    //     add_free_inode(inode_idx);
-    // }
 
     // generate all free blocks, except the first one for root
     for (int blockIdx = 2 + superblock.isize + 1; blockIdx < number_diskBlock; blockIdx++) {
@@ -598,10 +592,6 @@ int copyIn(char *extSourcePath, char *outputPath) {
         inode_type file_inode;
         file_inode = inode_reader(inode_num, file_inode);
         
-        // decToBinary (file_inode.flags);
-        // printf("%d\n", inode_num);
-        // printf("%d\n", file_inode.addr[0]);
-        // printf("%d\n", inode1.size1);
         FILE * external_fd;
 
         int number_block_to_write =  (int) ((file_inode.size1 / BLOCK_SIZE) + 1);
